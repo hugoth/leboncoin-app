@@ -25,12 +25,3 @@ function App() {
 }
 
 export default App;
-
-{
-  /* <BrowserRouter>
-  <div>
-    <Route path="/new-offer" exact={false} component={NewOfferPage} />
-  </div>
-
-</BrowserRouter>; */
-}
