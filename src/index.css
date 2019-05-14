@@ -213,3 +213,116 @@ code {
 .link {
   text-decoration: none;
 }
+
+/*   AUTHENTIFICATION  */
+.container-authentification {
+  display: flex;
+  justify-content: space-between;
+  width: 1026px;
+  height: 600px;
+  margin: auto;
+  margin-top: 20px;
+  border: rgb(240, 240, 240) 3px solid;
+  box-shadow: 10px 5px 10px rgb(223, 223, 223);
+}
+.authentification-left-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+}
+.authentification-left-top h3 {
+  text-align: left;
+}
+.authentification-left-top p {
+  text-align: left;
+}
+.fa-clock {
+  padding-top: 40px;
+  margin: 0;
+  color: #4183d7;
+  font-size: 40px;
+}
+.fa-bell {
+  padding-top: 40px;
+  margin: 0;
+  color: #4183d7;
+  font-size: 40px;
+}
+.fa-eye {
+  padding-top: 40px;
+  margin: 0;
+  color: #4183d7;
+  font-size: 40px;
+}
+.text-logo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.text-rigt-of-logo {
+  padding-left: 40px;
+}
+.text-rigt-of-logo {
+  padding-left: 40px;
+}
+.text-rigt-of-logo-eye {
+  padding-left: 30px;
+}
+.text-logo p {
+  font-size: 12px;
+}
+.paragraphe-1 {
+  display: flex;
+}
+.authentification-right {
+  padding: 50px;
+}
+.authentification-right input {
+  border-radius: 5px;
+  height: 40px;
+}
+.authentification-right button {
+  border-radius: 5px;
+  height: 40px;
+  width: 500px;
+  background-color: #4183d7;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+}
+.authentification-right h2 {
+  border-bottom: 3px solid #f5692a;
+  padding-bottom: 20px;
+}
+.authentification-right p {
+  font-size: 12px;
+}
+.authentification-right h4 {
+  text-align: left;
+}
+.left-logo-text {
+  display: flex;
+  flex-direction: row;
+}
+.password {
+  display: flex;
+  width: 500px;
+}
+.register-form input {
+  width: 500px;
+}
+.password input {
+  display: flex;
+  width: 240px;
+}
+.checkbox {
+  display: flex;
+  flex-direction: row;
+}
+.checkbox input {
+  width: 20px;
+}
+.checkbox p {
+  text-align: left;
+}
