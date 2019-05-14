@@ -39,9 +39,7 @@ class Home extends Component {
                   onClick={() => this.handleClickOnCard(elem)}
                   key={elem.id}
                 >
-                  <div className="img-offer">
-                    {/* <img src="" alt="Offer" /> */}
-                  </div>
+                  <div className="img-offer">{/* Image à insérer */}</div>
                   <div className="info-offer">
                     <p id="infos">
                       {elem.title} {elem.description}
