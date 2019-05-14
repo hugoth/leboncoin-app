@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 class Home extends Component {
   state = {
-    count: 0,
     offers: [],
     currentPage: 1,
     offerPerPage: 6,
@@ -34,14 +33,7 @@ class Home extends Component {
         <div className="content-offer">
           {currentOffers.map(elem => {
             return (
-              <Link
-                to={`/offer/${elem._id}`}
-                className="link"
-                Style={{
-                  fontWeight: "bold",
-                  color: "red"
-                }}
-              >
+              <Link to={`/offer/${elem._id}`} className="link">
                 <div
                   className="cards"
                   onClick={() => this.handleClickOnCard(elem)}

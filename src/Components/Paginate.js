@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 const Paginate = props => {
   const { offerPerPage, offers } = props.state;

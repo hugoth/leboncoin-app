@@ -10,6 +10,7 @@ class Offer extends Component {
       <div className="content-offer">
         <div className="card-single-offer">
           <div className="img-single-offer" />
+          {/* image à insérer  */}
           <div className="infos-single-offer">
             <p id="title-offer">{this.state.offer.title}</p>
             <p id="price-offer">{this.state.offer.price} €</p>
