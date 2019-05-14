@@ -3,7 +3,7 @@ import Home from "./Containers/Home";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Offer from "./Containers/Offer";
 import Header from "./Containers/Header";
-import Authentication from "./Containers/Authentication";
+import SignUp from "./Containers/SignUp";
 
 import "./App.css";
 
@@ -15,7 +15,7 @@ function App() {
         <Route
           exact
           path="/authentication/"
-          render={props => <Authentication {...props} />}
+          render={props => <SignUp {...props} />}
         />
         <Route exact path="/" render={props => <Home {...props} />} />
         <Route path="/offer/:offerId" render={props => <Offer {...props} />} />
