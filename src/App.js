@@ -17,6 +17,7 @@ class App extends React.Component {
     const id = Cookies.get("id");
     const username = Cookies.get("username");
 
+
     const userfromcookie = {
       token,
       id,
@@ -88,5 +89,6 @@ class App extends React.Component {
     );
   }
 }
+
 
 export default App;
