@@ -14,7 +14,11 @@ const Paginate = props => {
     <div>
       <ul className="list-page">
         {ListPage.map(number => {
-          return <li onClick={() => props.onClick(number)}>{number}</li>;
+          return (
+            <li key={number} onClick={() => props.onClick(number)}>
+              {number}
+            </li>
+          );
         })}
       </ul>
     </div>
