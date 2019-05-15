@@ -7,18 +7,20 @@ class Offer extends Component {
   };
   render() {
     return (
-      <div className="content-offer">
-        <div className="card-single-offer">
-          <div className="img-single-offer" />
-          {/* image à insérer  */}
-          <div className="infos-single-offer">
-            <p id="title-offer">{this.state.offer.title}</p>
-            <p id="price-offer">{this.state.offer.price} €</p>
+      <div>
+        <div className="content-offer">
+          <div className="card-single-offer">
+            <div className="img-single-offer" />
+            {/* image à insérer  */}
+            <div className="infos-single-offer">
+              <p id="title-offer">{this.state.offer.title}</p>
+              <p id="price-offer">{this.state.offer.price} €</p>
+            </div>
           </div>
-        </div>
-        <div className="description-offer">
-          <h3>Description</h3>
-          <p>{this.state.offer.description}</p>
+          <div className="description-offer">
+            <h3>Description</h3>
+            <p>{this.state.offer.description}</p>
+          </div>
         </div>
       </div>
     );

@@ -1,61 +1,37 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Paginate from "../Components/Paginate";
-import { Link } from "react-router-dom";
+import ListProducts from "../Components/Listproducts";
 
 class Home extends Component {
   state = {
     offers: [],
+    filteredOffer: [],
     currentPage: 1,
     offerPerPage: 6,
     isloaded: false
   };
 
-  handleClickOnCard = elem => {
-    console.log(elem._id);
-  };
-
   handleChangePage = page => {
-    console.log(page);
     this.setState({
       currentPage: page
     });
   };
 
+  // Filter from Header
+  // handleChangefilter = filter => {
+  //   let products = this.state.offers;
+  //   products = products.filter(product => {
+  //     let productName = product.title.toLowerCase();
+  //     return productName.indexOf(filter.toLowerCase()) !== -1;
+  //   });
+  //   this.setState({
+  //     offers: products
+  //   });
+  // };
+
   render() {
-    const { offers, offerPerPage, currentPage } = this.state;
-    const indexofLastOffer = currentPage * offerPerPage;
-    const indexofFirstOffer = indexofLastOffer - offerPerPage;
-    const currentOffers = offers.slice(indexofFirstOffer, indexofLastOffer);
-
     return (
-      <div className="content">
-        <div className="content-offer">
-          {currentOffers.map(elem => {
-            return (
-              <Link to={`/offer/${elem._id}`} className="link">
-                <div
-                  className="cards"
-                  onClick={() => this.handleClickOnCard(elem)}
-                  key={elem.id}
-                >
-                  <div className="img-offer">{/* Image à insérer */}</div>
-                  <div className="info-offer">
-                    <p id="infos">
-                      {elem.title} {elem.description}
-                    </p>
-                    <p id="price">{elem.price} €</p>
-                  </div>
-                </div>
-              </Link>
-            );
-          })}
-        </div>
-
-        <div className="paginate">
-          <Paginate state={this.state} onClick={this.handleChangePage} />
-        </div>
-      </div>
+      <ListProducts state={this.state} onChangePage={this.handleChangePage} />
     );
   }
 
