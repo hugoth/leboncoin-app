@@ -383,6 +383,7 @@ code {
   width: 600px;
   height: 50px;
   box-sizing: border-box;
+  font-size: 20px;
 }
 .bottom-part h4 {
   text-align: center;
