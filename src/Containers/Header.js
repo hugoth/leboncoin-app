@@ -30,10 +30,12 @@ const Header = props => {
           <div className="menu-top-nav-button">
             <nav>
               <ul className="menu-top-right">
-                <Link to={`/authentication`} className="link">
+                <Link to={`/signup`} className="link">
                   <li className="create-account">Créer un compte</li>
                 </Link>
-                <li>Se connecter</li>
+                <Link to={`/login`} className="link">
+                  <li className="login">Se connecter</li>
+                </Link>
               </ul>
             </nav>
           </div>

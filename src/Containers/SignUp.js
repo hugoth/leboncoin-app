@@ -15,7 +15,7 @@ class SignUp extends Component {
     e.preventDefault();
     const name = e.target.name;
     const value = e.target.value;
-    console.log(e.target.name, e.target.value);
+
     this.setState({
       [name]: value
     });
